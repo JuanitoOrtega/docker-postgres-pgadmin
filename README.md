@@ -23,10 +23,13 @@ docker exec -it <id container> bash
 ## Interactuar con la base de datos
 
 ```shell
-psql -U <database name> <database user> --password
+psql -U <user> -d <database>
 ```
+
+Otra forma de acceder a la base de datos
+
 ```shell
-psql -U root postgres --password
+psql -U <user> <database> --password
 ```
 
 ## Lanzar servidor en segundo plano
