@@ -1,21 +1,41 @@
-# Lanzar contenedor
+# PostgreSQL y pgAdmin4 con Docker compose
 
-`docker compose up`
+Crea facilmente un servidor de base de datos PostgreSQL usando [Docker][1] compose, más cliente pgAdmin4 para gestionar tus bases de datos desde una interfáz gráfica en lugar de la consola.
 
-# Apagar contenedor
+## Lanzar contenedor
 
-`docker compose down`
+```shell
+$ docker compose up
+```
 
-# Interactuar dentro del contenedor
+## Apagar contenedor
 
-`docker exec -it <id container> bash`
+```shell
+$ docker compose down
+```
 
-# Interactuar con la base de datos
+## Interactuar dentro del contenedor
 
-`psql -U <database name> <database user> --password`
+```shell
+$ docker exec -it <id container> bash
+```
 
-`psql -U root postgres --password`
+## Interactuar con la base de datos
 
-# Lanzar servidor en segundo plano
+```shell
+$ psql -U <database name> <database user> --password
 
-`docker compose up -d`
+$ psql -U root postgres --password
+```
+
+## Lanzar servidor en segundo plano
+
+```shell
+$ docker compose up -d
+```
+
+# Información adicional
+
+- [Docker][1]
+---
+[1]: https://docs.docker.com/get-started/
